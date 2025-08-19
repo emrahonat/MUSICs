@@ -10,8 +10,11 @@ as a function of the aforementioned parameters to quantify estimation accuracy. 
 algorithm is assessed by comparing their execution durations. The results provide valuable insights into the strengths and limitations 
 of each MUSIC variant, offering guidance for their application in practical DoA estimation tasks.
 
-Keywords
+Keywords:
+
 ASP (Array Signal Processing), DoA (Direction of Arrival), MUSIC (Multiple Signal Classification), ULA (Uniform Linear Array), Root MUSIC, Improved/Modified MUSIC, FBSS (Forward/Backward Spatial Smoothing).
+
+Cite:
 
 Onat, E. (2025). High-Resolution Direction Finding on Uniform Linear Arrays: A Comparative Evaluation of MUSIC Algorithm Derivatives. 
 Gazi Üniversitesi Fen Bilimleri Dergisi Part C: Tasarım Ve Teknoloji, 13(3). 
