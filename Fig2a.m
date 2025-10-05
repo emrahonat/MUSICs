@@ -1,9 +1,12 @@
+%% High-Resolution Direction Finding on Uniform Linear Arrays: 
+%% A Comparative Evaluation of MUSIC Algorithm Derivatives 
+%
 % 19.08.2025
 % Dr. Emrah Onat
 % 
-% You can use my MATLAB codes. Please cite my paper below.
+% You can use my MATLAB codes as long as you cite my article below.
 %
-% Onat, E. (2025). High-Resolution Direction Finding on Uniform Linear Arrays: A Comparative Evaluation of MUSIC Algorithm Derivatives. Gazi Üniversitesi Fen Bilimleri Dergisi Part C: Tasarım Ve Teknoloji, 13(3). https://doi.org/10.29109/gujsc.1696029
+% Onat, E. (2025). High-Resolution Direction Finding on Uniform Linear Arrays: A Comparative Evaluation of MUSIC Algorithm Derivatives. Gazi Üniversitesi Fen Bilimleri Dergisi Part C: Tasarım ve Teknoloji, 13(3), 1122-1136. https://doi.org/10.29109/gujsc.1696029
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
@@ -128,7 +131,7 @@ for ii = 1:length(M_values)
                     end
                     
                     if isempty(estimated_angles)
-                        disp('Dizi boş.');
+                        disp('Empty');
                         bos_MUSIC(snr_idx) = bos_MUSIC(snr_idx) + 1;
                     else
                         angle_derece = angles*180/pi;
@@ -190,7 +193,7 @@ for ii = 1:length(M_values)
                     t2=toc(t1);
                     time_IMP(ind)=t2;
                    
-                    % locs dizisinin boyutunu kontrol et
+                    % size of locs control
                     if length(locs) >= D
                         estimated_angles = sort(locs(1:D));
                     else
@@ -199,7 +202,7 @@ for ii = 1:length(M_values)
                     
         
                     if isempty(estimated_angles)
-                        disp('Dizi boş.');
+                        disp('Empty');
                         bos_Imp(snr_idx) = bos_Imp(snr_idx) + 1;
                     else
                         angle_derece = angles*180/pi;
@@ -263,10 +266,10 @@ for ii = 1:length(M_values)
                     end
                     % Compute eigendecomposition and order by descending eigenvalues
         
-                    %D yi L yaptim
+                    %D => L 
                     [Q0, L] = eig(Ztop * Ztop');
                     [lambda1, index] = sort(abs(diag(L)));
-                    %lambdayı _uca yaptım
+                    %lambda -> lambda_uca
                     lambda_uca = lambda1(h:-1:1);
                     Q = Q0(:, index(h:-1:1));
                     % Compute pseudo-spectrum
