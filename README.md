@@ -1,5 +1,7 @@
 High-Resolution Direction Finding on Uniform Linear Arrays: A Comparative Evaluation of MUSIC Algorithm Derivatives
 
+Abstract:
+
 This paper investigates various Multiple Signal Classification (MUSIC) algorithms for Direction of Arrival (DoA) estimation, 
 including 'Traditional MUSIC', 'Root MUSIC', 'Forward/Backward Spatial Smoothing (FBSS) MUSIC', and 'Improved/Modified MUSIC'. 
 The study elaborates on the principles underlying each algorithm and explores the factors influencing the accuracy of DoA estimation, 
@@ -17,7 +19,7 @@ ASP (Array Signal Processing), DoA (Direction of Arrival), MUSIC (Multiple Signa
 Cite:
 
 Onat, E. (2025). High-Resolution Direction Finding on Uniform Linear Arrays: A Comparative Evaluation of MUSIC Algorithm Derivatives. 
-Gazi Üniversitesi Fen Bilimleri Dergisi Part C: Tasarım Ve Teknoloji, 13(3). 
+Gazi Üniversitesi Fen Bilimleri Dergisi Part C: Tasarım Ve Teknoloji, 13(3),1122-1136.
 https://doi.org/10.29109/gujsc.1696029
 
 
